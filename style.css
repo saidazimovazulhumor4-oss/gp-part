@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #11141a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(17, 20, 26, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff3838;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+}
+
+.search-box input {
+    background-color: #222831;
+    border: 1px solid #393e46;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #ff3838;
+}
+
+
+.hero {
+    background: linear-gradient(to right, rgba(17, 20, 26, 0.9), rgba(17, 20, 26, 0.4)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.badge {
+    background-color: #ff3838;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 15px 0 5px 0;
+    line-height: 1.1;
+}
+
+.movie-info {
+    color: #ff3838;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff3838;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e02424;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.container {
+    padding: 0 5%;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff3838;
+    padding-left: 10px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.movie-card {
+    background-color: #1e222b;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-poster {
+    height: 280px;
+    background-color: #2a2f3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem; /* Пока здесь эмодзи вместо картинок */
+}
+
+.rating {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.movie-details {
+    padding: 15px;
+}
+
+.movie-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-details p {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0b0d11;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e222b;
+}
